@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sakshi Pawar Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <body>
+    <nav>
+      <div class="logo"><span></span></div>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#education">Education</a></li>
+
+        <li><a href="#skills">Skills</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+
+      <div class="left">
+        <h3>Hello I'm</h3>
+
+        <h1>Sakshi Pawar</h1>
+
+        <div class="badge">🟢 Available for Internship</div>
+
+        <h2 id="typing"></h2>
+
+        <p>
+          Passionate Web Developer creating interactive experiences and
+          AI-powered applications. Focused on MERN Stack, Frontend Design and
+          Modern UI.
+        </p>
+
+        <div class="buttons">
+          <a href="assets/images/RESUME MCA.pdf">
+            <button>Download Resume</button>
+          </a>
+
+          <a href="#contact">
+            <button class="secondary">Contact Me</button>
+          </a>
+        </div>
+
+        <div class="hero-social">
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="#">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="hero-image">
+          <img src="assets/images/profile.png" />
+
+          <div class="orbit-ring">
+            <div class="orbit-item" style="--angle: 0deg">
+              <div class="orbit"><i class="fab fa-react"></i></div>
+            </div>
+
+            <div class="orbit-item" style="--angle: 90deg">
+              <div class="orbit"><i class="fab fa-js"></i></div>
+            </div>
+
+            <div class="orbit-item" style="--angle: 180deg">
+              <div class="orbit"><i class="fab fa-github"></i></div>
+            </div>
+
+            <div class="orbit-item" style="--angle: 270deg">
+              <div class="orbit"><i class="fas fa-brain"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat-item" data-target="3">
+        <h2><span class="counter">0</span>+</h2>
+        <p>Projects Built</p>
+      </div>
+
+      <div class="stat-item" data-target="9.22" data-decimal="true">
+        <h2><span class="counter">0</span></h2>
+        <p>CGPA</p>
+      </div>
+
+      <div class="stat-item" data-target="10">
+        <h2><span class="counter">0</span>+</h2>
+        <p>Technologies</p>
+      </div>
+
+      <div class="stat-item" data-target="3">
+        <h2><span class="counter">0</span></h2>
+        <p>Certifications</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1 class="section-title">About Me</h1>
+
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="terminal-card">
+            <div class="terminal-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-filename">sakshi.js</span>
+            </div>
+
+            <pre
+              class="terminal-body"
+            ><code><span class="code-key">const</span> developer = {
+  name: <span class="code-string">'Sakshi Pawar'</span>,
+  role: <span class="code-string">'Web Developer'</span>,
+  education: <span class="code-string">'MCA Student'</span>,
+  stack: [<span class="code-string">'React'</span>, <span class="code-string">'Node.js'</span>, <span class="code-string">'Firebase'</span>],
+  currentlyLearning: <span class="code-string">'MERN + AI'</span>,
+  status: <span class="code-string">'Open to internships'</span>,
+};</code></pre>
+          </div>
+
+          <div class="about-facts">
+            <div class="fact-chip">
+              <i class="fas fa-location-dot"></i>
+              <span>Mumbai, Maharashtra</span>
+            </div>
+
+            <div class="fact-chip">
+              <i class="fas fa-graduation-cap"></i>
+              <span>MCA Student</span>
+            </div>
+
+            <div class="fact-chip">
+              <i class="fas fa-laptop-code"></i>
+              <span>Frontend + AI Focus</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <p class="about-lead">
+            I'm <span class="highlight">Sakshi Pawar</span>, an aspiring Web
+            Developer and MCA student who enjoys turning ideas into modern,
+            responsive, and user-centric digital experiences.
+          </p>
+
+          <p>
+            I have hands-on experience building web and mobile applications with
+            HTML, CSS, JavaScript, Tailwind CSS, and Firebase. I care about
+            clean code, intuitive interfaces, and interactions that feel
+            effortless. Right now, I'm expanding into the MERN Stack and
+            AI-powered applications to build more impactful, real-world
+            projects.
+          </p>
+
+          <div class="about-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Firebase</span>
+            <span>Tailwind CSS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h1 class="section-title">Education 🎓</h1>
+
+      <div class="timeline">
+        <div class="item">
+          <div class="item-node"><i class="fas fa-graduation-cap"></i></div>
+
+          <div class="item-content">
+            <div class="item-top">
+              <h2>Master of Computer Applications (MCA)</h2>
+              <span class="year-chip">2025 – Present</span>
+            </div>
+
+            <p>
+              <i class="fas fa-building-columns"></i> Viva Institute of
+              Technology
+            </p>
+
+            <small class="status-pill pulse">🟢 Pursuing</small>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-node"><i class="fas fa-graduation-cap"></i></div>
+
+          <div class="item-content">
+            <div class="item-top">
+              <h2>Bachelor of Information Technology</h2>
+              <span class="year-chip">2022 – 2025</span>
+            </div>
+
+            <p><i class="fas fa-building-columns"></i> University of Mumbai</p>
+
+            <small class="status-pill">⭐ CGPA: 9.22</small>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-node"><i class="fas fa-school"></i></div>
+
+          <div class="item-content">
+            <div class="item-top">
+              <h2>Higher Secondary Certificate (HSC)</h2>
+              <span class="year-chip">2021 – 2022</span>
+            </div>
+
+            <p><i class="fas fa-building-columns"></i> D.G Ruparel College</p>
+
+            <small class="status-pill">📘 72.83%</small>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-node"><i class="fas fa-book"></i></div>
+
+          <div class="item-content">
+            <div class="item-top">
+              <h2>Secondary School Certificate (SSC)</h2>
+              <span class="year-chip">2019 – 2020</span>
+            </div>
+
+            <p><i class="fas fa-building-columns"></i> Cosmos High School</p>
+
+            <small class="status-pill">🏆 90%</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h1 class="section-title">Skills 🛠️</h1>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h2><span class="cat-emoji">🎨</span> Frontend</h2>
+
+          <div class="skills">
+            <span><i class="fab fa-html5"></i> HTML5</span>
+            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span><i class="fab fa-js"></i> JavaScript</span>
+            <span><i class="fas fa-wind"></i> Tailwind CSS</span>
+            <span><i class="fas fa-mobile-screen"></i> Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h2><span class="cat-emoji">⚙️</span> Backend</h2>
+
+          <div class="skills">
+            <span><i class="fab fa-node-js"></i> Node.js</span>
+            <span>🔥 Firebase</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h2><span class="cat-emoji">💻</span> Programming Languages</h2>
+
+          <div class="skills">
+            <span><i class="fab fa-js"></i> JavaScript</span>
+            <span><i class="fab fa-python"></i> Python</span>
+            <span><i class="fas fa-code"></i> C++</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h2><span class="cat-emoji">🧰</span> Tools</h2>
+
+          <div class="skills">
+            <span><i class="fab fa-git-alt"></i> Git</span>
+            <span><i class="fab fa-github"></i> GitHub</span>
+            <span><i class="fas fa-laptop-code"></i> VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h1 class="section-title">Featured Projects 🚀</h1>
+      <p class="section-subtitle">A few things I've built and shipped ✨</p>
+
+      <div class="mobile-projects">
+        <!-- SwiftRide -->
+
+        <div
+          class="project-card mobile"
+          data-title="SwiftRide"
+          data-image="assets/images/swiftride.jpg"
+          data-description="A full-featured ride booking mobile app inspired by Uber, built to explore real-time geolocation and live driver tracking. Riders can request a ride, watch their driver approach on a live map, and authenticate securely with Firebase before every trip."
+          data-tech="React Native, Firebase, Maps API, Realtime Database"
+          data-github="https://github.com/sakshipawar1704/Uber_clone"
+        >
+          <div class="project-image-wrap">
+            <span class="project-badge">📱 Mobile App</span>
+            <img src="assets/images/swiftride.jpg" alt="SwiftRide" />
+          </div>
+
+          <div class="project-content">
+            <h2>🚕 SwiftRide</h2>
+
+            <p>
+              Ride booking mobile application featuring real-time tracking, Maps
+              API integration and authentication.
+            </p>
+
+            <div class="hidden-info">
+              <div class="tech-stack">
+                <span><i class="fab fa-react"></i> React Native</span>
+                <span>🔥 Firebase</span>
+                <span>🗺️ Maps API</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/sakshipawar1704/Uber_clone"
+                  target="_blank"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fab fa-github"></i>
+
+                  GitHub
+                </a>
+
+                <button class="details-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Diet Planner -->
+
+        <div
+          class="project-card mobile"
+          data-title="AI Diet Planner"
+          data-image="assets/images/dietplanner.jpeg"
+          data-description="An AI-powered nutrition companion that generates personalised meal plans based on the user's goals, preferences and dietary restrictions. Built with Expo for rapid cross-platform iteration and Firebase for storing user profiles and meal history."
+          data-tech="React Native, Expo, Firebase, AI API"
+          data-github="https://github.com/sakshipawar1704/Ai-Diet-Planner"
+        >
+          <div class="project-image-wrap">
+            <span class="project-badge">📱 Mobile App</span>
+            <img src="assets/images/dietplanner.jpeg" alt="AI Diet Planner" />
+          </div>
+
+          <div class="project-content">
+            <h2>🥗 AI Diet Planner</h2>
+
+            <p>
+              AI-powered nutrition app built using React Native, Expo and
+              Firebase for smart meal planning.
+            </p>
+
+            <div class="hidden-info">
+              <div class="tech-stack">
+                <span><i class="fab fa-react"></i> React Native</span>
+
+                <span>⚡ Expo</span>
+
+                <span>🔥 Firebase</span>
+
+                <span>🤖 AI API</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/sakshipawar1704/Ai-Diet-Planner"
+                  target="_blank"
+                  onclick="event.stopPropagation()"
+                >
+                  <i class="fab fa-github"></i>
+
+                  GitHub
+                </a>
+
+                <button class="details-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Geography Genius -->
+
+      <div
+        class="project-card web"
+        data-title="Geography Genius"
+        data-image="assets/images/gg.png"
+        data-description="An interactive geography quiz platform designed to make learning competitive and fun. Players climb a live leaderboard, earn badges through a gamified XP system, and pull country data from public APIs — all protected behind secure Firebase authentication."
+        data-tech="HTML, CSS, JavaScript, Firebase, REST APIs"
+        data-github="https://github.com/sakshipawar1704/Geography-Genius"
+      >
+        <div class="project-image-wrap">
+          <span class="project-badge">🌐 Web App</span>
+          <img src="assets/images/gg.png" alt="Geography Genius" />
+        </div>
+
+        <div class="project-content">
+          <h2>🌍 Geography Genius</h2>
+
+          <p>
+            Interactive quiz platform featuring leaderboards, gamification, APIs
+            integration and secure authentication.
+          </p>
+
+          <div class="hidden-info">
+            <div class="tech-stack">
+              <span><i class="fab fa-html5"></i> HTML</span>
+
+              <span><i class="fab fa-css3-alt"></i> CSS</span>
+
+              <span><i class="fab fa-js"></i> JavaScript</span>
+
+              <span>🔥 Firebase</span>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/sakshipawar1704/Geography-Genius"
+                target="_blank"
+                onclick="event.stopPropagation()"
+              >
+                <i class="fab fa-github"></i>
+
+                GitHub
+              </a>
+
+              <button class="details-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="certifications">
+      <h1 class="section-title">Certifications</h1>
+
+      <div class="certificate-container">
+        <div class="certificate-card">
+          <h2>MERN Stack Development</h2>
+
+          <p>edQuest</p>
+
+          <span>2026</span>
+        </div>
+
+        <div class="certificate-card">
+          <h2>HTML & CSS Zero to Hero</h2>
+
+          <p>LetsUpgrade</p>
+
+          <span>2026</span>
+        </div>
+
+        <div class="certificate-card">
+          <h2>Deloitte Data Analytics Simulation</h2>
+
+          <p>Forage</p>
+
+          <span>2024</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="section-title">Get In Touch 📬</h1>
+      <p class="section-subtitle">
+        Got an idea, a role, or just want to say hi? 👋
+      </p>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Let's Connect 🤝</h3>
+
+          <span class="status-pill pulse">🟢 Available for internships</span>
+
+          <p>
+            I'm always interested in discussing new opportunities,
+            collaborations, and exciting projects.
+          </p>
+
+          <div class="contact-cards">
+            <a class="contact-card" href="mailto:sakshipawar1704@gmail.com">
+              <div class="contact-icon">📧</div>
+              <div>
+                <span>Email</span>
+                <p>sakshipawar1704@gmail.com</p>
+              </div>
+            </a>
+
+            <a class="contact-card" href="tel:+917208499228">
+              <div class="contact-icon">📱</div>
+              <div>
+                <span>Phone</span>
+                <p>+91 72084 99228</p>
+              </div>
+            </a>
+
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <div>
+                <span>Location</span>
+                <p>Mumbai, Maharashtra</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="socials">
+            <a href="https://github.com/sakshipawar1704" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/sakshi-pawar-69602a2a9/"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:sakshipawar1704@gmail.com" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <form id="contact-form">
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input
+              type="text"
+              name="from_name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input
+              type="email"
+              name="from_email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <i class="fas fa-comment-dots"></i>
+            <textarea name="message" placeholder="Message" required></textarea>
+          </div>
+
+          <button type="submit">Send Message 🚀</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="modal-overlay" id="project-modal">
+      <div class="modal-box">
+        <button class="modal-close" id="modal-close">
+          <i class="fas fa-xmark"></i>
+        </button>
+
+        <img class="modal-image" id="modal-image" src="" alt="" />
+
+        <div class="modal-body">
+          <h2 id="modal-title"></h2>
+          <p id="modal-description"></p>
+
+          <div class="tech-stack" id="modal-tech"></div>
+
+          <div class="project-links">
+            <a id="modal-github" href="#" target="_blank">
+              <i class="fab fa-github"></i>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
